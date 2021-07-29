@@ -1,0 +1,2 @@
+<input #inp (keyup) = 'serachItem(inp)' >
+<app-child *ngFor = 'let data of datas' [data] = 'data' (emitData) = 'deletItem($event)'></app-child>
